@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: blue;
+    padding: 10px 10%;
+}
+header h1{
+    color: #fff;
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+ul li a{
+    color: #dddddda8;
+    text-decoration: none;
+}
+main h2{
+    text-align: center;
+    margin-top: 40px;
+}
+table{
+    border-collapse: collapse;
+    width: 1100px;
+    margin: 10px 10%;
+}
+main table .title{
+    background: #000;
+}
+
+main table tr th{
+    text-align: start;
+    color: #fff;
+    padding: 10px 17px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+}
+main table tr td{
+    padding: 10px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+}
+main table .item1{
+    background: rgba(128, 128, 128, 0.192);
+}
+main .all_cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .all_cart .cart-item{
+    background: #fff;
+    margin: 10px 15px;
+    padding: 16px 17px;
+    height: 200px;
+    border-radius: 5px;
+    width: 350px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.2);
+}
+main .all_cart .cart-item:hover,
+main .all_cart .items:hover
+{
+    transform: scale(90%);
+}
+main .all_cart .cart-item h4{
+    margin-top: 15px;
+    color: #000;
+    font-size: 20px;
+}
+main .all_cart .cart-item p{
+    padding-right: 50px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+main .all_cart .cart-item a{
+    background: blue;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+main .all_cart .items{
+    background: #fff;
+    margin: 0 20px;
+    height: 165px;
+    padding: 0 16px;
+    border-radius: 5px;
+    margin-bottom: 38px;
+    width: 330px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.2);
+}
+main .all_cart .items h4{
+    margin-top: 20px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+main .all_cart .items p{
+    margin-bottom: 20px;
+}
+main .all_cart .items a{
+    background: blue;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+main .all_cart .items img{
+    padding-top: 10px;
+}
+.contact{
+    margin: 30px 35%;
+}
+.contact h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact .nom,
+.contact .email ,
+.contact .Message{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.contact .nom input,
+.contact .email input,
+.contact .Message textarea{
+    margin-top: 10px;
+    width: 450px;
+    padding: 6px;
+}
+.contact button{
+    width: 450px;
+    margin: 20px 0;
+    padding: 10px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.contact .Message textarea{
+    height: 100px;
+}
+footer{
+    background: #000;
+    color: #fff;
+}
+footer p{
+    text-align: center;
+    padding: 20px 10px;
+}
+@media (max-width:900px) {
+    table{
+        border-collapse: collapse;
+        width: 200px;
+        margin: 20px auto;
+    }
+    header{
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        padding: 5px 0;
+    }
+    main .all_cart{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
+    .contact{
+        margin: 30px 10%;
+    }
+    .contact .nom input,
+    .contact .email input,
+    .contact .Message textarea{
+    margin-top: 10px;
+    width: 300px;
+    padding: 6px;
+}
+.contact button{
+    width: 300px;
+    margin: 20px 0;
+    padding: 10px;
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+main .all_cart .cart-item p{
+    padding-right: 30px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer p{
+    text-align: center;
+    padding: 20px 5px;
+}
+main .all_cart .cart-item{
+    background: #fff;
+    margin: 14px 0;
+    padding: 16px 10px;
+    height: 200px;
+    border-radius: 5px;
+    width: 320px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.2);
+}
+main .all_cart .items{
+    background: #fff;
+    margin: 10px 10px;
+    height: 165px;
+    padding: 0 16px;
+    border-radius: 5px;
+    margin-bottom: 38px;
+    width: 320px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.2);
+}
+}
+@media (max-width:768px){
+    table{
+        border-collapse: collapse;
+        width: 300px;
+        margin: 20px auto;
+    }
+    .contact {
+        margin: 30px 13%;
+    }
+}
